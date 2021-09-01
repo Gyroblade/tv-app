@@ -20,6 +20,7 @@ http://api.tvmaze.com/shows?page=1
 Made with Create React App
 Uses Bootstrap
 
-## HOW TO START IT
+# HOW TO START IT
 Install modules: npm install or yarn install
+
 Run a project: npm start or yarn start
