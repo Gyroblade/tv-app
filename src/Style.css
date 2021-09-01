@@ -1,0 +1,27 @@
+img {
+  width: 20%;
+  height: 20%;
+  border: 2px solid #000;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  background: white;
+  text-align: center;
+}
+
+table {
+  border-collapse: separate;
+}
+
+td {
+  vertical-align: middle;
+  font-size: 120%;
+}
+
+#pager{
+    position: fixed;
+    top: 95%;
+    left: 40%;
+}
