@@ -9,7 +9,13 @@ function Tv( props) {
   useEffect(() => {
     fetch("http://api.tvmaze.com/shows?page=1".trim())
       .then((it) => it.json())
-      .then((result) => setData(result))
+      .then((result) =>
+        setData(
+          result.map((it0: object, index0) => {
+            return (it0 = { ...it0, num: index0 + 1 }); // add numeration
+          })
+        )
+      )
       .catch(() => "not found");
   }, []);
 
@@ -35,9 +41,6 @@ function Tv( props) {
         <tbody>
           {
             data
-              .map((it0: object, index0) => {
-                return (it0 = { ...it0, num: index0 + 1 }); // add numeration
-              })
               .slice(
                 (props.currentPageNumber - 1) * PAGE_SIZE,
                 props.currentPageNumber * PAGE_SIZE
