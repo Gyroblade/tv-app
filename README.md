@@ -24,3 +24,6 @@ Uses Bootstrap
 Install modules: npm install or yarn install
 
 Run a project: npm start or yarn start
+
+# TEST ON HEROKU
+[TV App](http://tv-app-z64.herokuapp.com/#)
